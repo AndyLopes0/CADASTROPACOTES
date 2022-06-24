@@ -1,0 +1,205 @@
+/*BARRASUPERIOR*/
+
+:root{
+    --cor-primaria: #054f77;
+    --cor-hover: #469bd2 ;
+    --cor-letras: #ffff ;
+}
+
+*{
+text-decoration: none;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+.sidebar ul{
+    background-color: var(--cor-primaria) ;
+}
+
+.sidebar ul li{
+    display: inline;
+    position: relative;
+}
+
+.sidebar ul li a{
+    color: var(--cor-letras) ;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.sidebar ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*SUBMENU*/
+
+.sidebar ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.sidebar ul li:hover ul{
+    display: block;
+
+
+}
+
+.sidebar ul ul li a{
+    display: block;
+}
+
+.sidebar ul{
+    text-align: center;
+}
+
+.sidebar{
+    padding-top: 0px;
+    display: block;
+    width: 100%;
+    background-color: #054f77;
+}
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    color: #ffff;
+}
+.sidebar{
+    border-radius: 20px;
+}
+
+article{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+
+section{
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    color: #054f77;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+h3 a{
+    color: #054f77;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+/*CADASTRO E TABELA*/
+
+#listaPacotes{display: none;}
+#form{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    width: min-content;
+    padding: 10px;
+    background-color: rgb(161, 188, 236);
+    border-radius: 10px;
+
+}
+body[page=lista] #listaPacotes{
+    display: block;
+}
+body[page=cadastro] #form{
+    display: block;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+table td{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.trPrincipal th{
+    background-color: var(--cor-primaria);
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table th, table td{
+    font-size: 14px;
+    padding: 10px 15px;
+    border: solid 1px #ccc;
+    
+}
+
+tbody{
+    justify-items: center;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #07a;
+    color: #fff;
+    margin: 3px;
+    padding: 10px 15px;
+}
+button.cancelar{
+    background-color: #ccc;
+    color: #666;
+}
+button:hover{
+    opacity: 0.8;
+}
+button.deletar{
+    background-color: rgb(170, 44, 44) ;
+}
+input{
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+label>span{
+    padding: 5px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+label>input{
+    align-items: center;
+    outline-color: rgb(170, 197, 219);
+    width: 300px;
+    border-radius: 20px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
